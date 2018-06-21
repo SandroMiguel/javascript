@@ -41,7 +41,7 @@ Outros Guias de estilo
   1. [Espaços em branco](#espaços-em-branco)
   1. [Vírgulas](#vírgulas)
   1. [Pontos e Vírgulas](#pontos-e-vírgulas)
-  1. [Conversão de tipos e coerção](#conversão-de-tipos-e-coerção)
+  1. [Conversão de Tipos e Coerção](#conversão-de-tipos-e-coerção)
   1. [Convenções de Nomenclatura](#convenções-de-nomenclatura)
   1. [Accessors](#accessors)
   1. [Eventos](#eventos)
@@ -139,7 +139,7 @@ Outros Guias de estilo
     ```
 
   <a name="references--block-scope"></a><a name="2.3"></a>
-  - [2.3](#references--block-scope) Note that both `let` and `const` are block-scoped.
+  - [2.3](#references--block-scope) Note que tanto `let` como `const` estão no escopo de bloco.
 
     ```javascript
     // const and let only exist in the blocks they are defined in.
@@ -169,7 +169,7 @@ Outros Guias de estilo
   <a name="es6-computed-properties"></a><a name="3.4"></a>
   - [3.2](#es6-computed-properties) Use computed property names when creating objects with dynamic property names.
 
-    > Why? They allow you to define all the properties of an object in one place.
+    > Porquê? They allow you to define all the properties of an object in one place.
 
     ```javascript
 
@@ -218,7 +218,7 @@ Outros Guias de estilo
   <a name="es6-object-concise"></a><a name="3.6"></a>
   - [3.4](#es6-object-concise) Use property value shorthand. eslint: [`object-shorthand`](https://eslint.org/docs/rules/object-shorthand.html)
 
-    > Why? It is shorter to write and descriptive.
+    > Porquê? It is shorter to write and descriptive.
 
     ```javascript
     const lukeSkywalker = 'Luke Skywalker';
@@ -237,7 +237,7 @@ Outros Guias de estilo
   <a name="objects--grouped-shorthand"></a><a name="3.7"></a>
   - [3.5](#objects--grouped-shorthand) Group your shorthand properties at the beginning of your object declaration.
 
-    > Why? It’s easier to tell which properties are using the shorthand.
+    > Porquê? It’s easier to tell which properties are using the shorthand.
 
     ```javascript
     const anakinSkywalker = 'Anakin Skywalker';
@@ -267,7 +267,7 @@ Outros Guias de estilo
   <a name="objects--quoted-props"></a><a name="3.8"></a>
   - [3.6](#objects--quoted-props) Only quote properties that are invalid identifiers. eslint: [`quote-props`](https://eslint.org/docs/rules/quote-props.html)
 
-    > Why? In general we consider it subjectively easier to read. It improves syntax highlighting, and is also more easily optimized by many JS engines.
+    > Porquê? In general we consider it subjectively easier to read. It improves syntax highlighting, and is also more easily optimized by many JS engines.
 
     ```javascript
     // bad
@@ -288,7 +288,7 @@ Outros Guias de estilo
   <a name="objects--prototype-builtins"></a>
   - [3.7](#objects--prototype-builtins) Do not call `Object.prototype` methods directly, such as `hasOwnProperty`, `propertyIsEnumerable`, and `isPrototypeOf`.
 
-    > Why? These methods may be shadowed by properties on the object in question - consider `{ hasOwnProperty: false }` - or, the object may be a null object (`Object.create(null)`).
+    > Porquê? These methods may be shadowed by properties on the object in question - consider `{ hasOwnProperty: false }` - or, the object may be a null object (`Object.create(null)`).
 
     ```javascript
     // bad
@@ -480,12 +480,12 @@ Outros Guias de estilo
 
 **[⬆ voltar ao início](#Índice)**
 
-## Destructuring
+## Desestruturação
 
   <a name="destructuring--object"></a><a name="5.1"></a>
   - [5.1](#destructuring--object) Use object destructuring when accessing and using multiple properties of an object. eslint: [`prefer-destructuring`](https://eslint.org/docs/rules/prefer-destructuring)
 
-    > Why? Destructuring saves you from creating temporary references for those properties.
+    > Porquê? Destructuring saves you from creating temporary references for those properties.
 
     ```javascript
     // bad
@@ -525,7 +525,7 @@ Outros Guias de estilo
   <a name="destructuring--object-over-array"></a><a name="5.3"></a>
   - [5.3](#destructuring--object-over-array) Use object destructuring for multiple return values, not array destructuring.
 
-    > Why? You can add new properties over time or change the order of things without breaking call sites.
+    > Porquê? You can add new properties over time or change the order of things without breaking call sites.
 
     ```javascript
     // bad
@@ -568,7 +568,7 @@ Outros Guias de estilo
   <a name="strings--line-length"></a><a name="6.2"></a>
   - [6.2](#strings--line-length) Strings that cause the line to go over 100 characters should not be written across multiple lines using string concatenation.
 
-    > Why? Broken strings are painful to work with and make code less searchable.
+    > Porquê? Broken strings are painful to work with and make code less searchable.
 
     ```javascript
     // bad
@@ -589,7 +589,7 @@ Outros Guias de estilo
   <a name="es6-template-literals"></a><a name="6.4"></a>
   - [6.3](#es6-template-literals) When programmatically building up strings, use template strings instead of concatenation. eslint: [`prefer-template`](https://eslint.org/docs/rules/prefer-template.html) [`template-curly-spacing`](https://eslint.org/docs/rules/template-curly-spacing)
 
-    > Why? Template strings give you a readable, concise syntax with proper newlines and string interpolation features.
+    > Porquê? Template strings give you a readable, concise syntax with proper newlines and string interpolation features.
 
     ```javascript
     // bad
@@ -619,7 +619,7 @@ Outros Guias de estilo
   <a name="strings--escaping"></a>
   - [6.5](#strings--escaping) Do not unnecessarily escape characters in strings. eslint: [`no-useless-escape`](https://eslint.org/docs/rules/no-useless-escape)
 
-    > Why? Backslashes harm readability, thus they should only be present when necessary.
+    > Porquê? Backslashes harm readability, thus they should only be present when necessary.
 
     ```javascript
     // bad
@@ -632,12 +632,12 @@ Outros Guias de estilo
 
 **[⬆ voltar ao início](#Índice)**
 
-## Functions
+## Funções
 
   <a name="functions--declarations"></a><a name="7.1"></a>
   - [7.1](#functions--declarations) Use named function expressions instead of function declarations. eslint: [`func-style`](https://eslint.org/docs/rules/func-style)
 
-    > Why? Function declarations are hoisted, which means that it’s easy - too easy - to reference the function before it is defined in the file. This harms readability and maintainability. If you find that a function’s definition is large or complex enough that it is interfering with understanding the rest of the file, then perhaps it’s time to extract it to its own module! Don’t forget to explicitly name the expression, regardless of whether or not the name is inferred from the containing variable (which is often the case in modern browsers or when using compilers such as Babel). This eliminates any assumptions made about the Error's call stack. ([Discussion](https://github.com/airbnb/javascript/issues/794))
+    > Porquê? Function declarations are hoisted, which means that it’s easy - too easy - to reference the function before it is defined in the file. This harms readability and maintainability. If you find that a function’s definition is large or complex enough that it is interfering with understanding the rest of the file, then perhaps it’s time to extract it to its own module! Don’t forget to explicitly name the expression, regardless of whether or not the name is inferred from the containing variable (which is often the case in modern browsers or when using compilers such as Babel). This eliminates any assumptions made about the Error's call stack. ([Discussion](https://github.com/airbnb/javascript/issues/794))
 
     ```javascript
     // bad
@@ -660,7 +660,7 @@ Outros Guias de estilo
   <a name="functions--iife"></a><a name="7.2"></a>
   - [7.2](#functions--iife) Wrap immediately invoked function expressions in parentheses. eslint: [`wrap-iife`](https://eslint.org/docs/rules/wrap-iife.html)
 
-    > Why? An immediately invoked function expression is a single unit - wrapping both it, and its invocation parens, in parens, cleanly expresses this. Note that in a world with modules everywhere, you almost never need an IIFE.
+    > Porquê? An immediately invoked function expression is a single unit - wrapping both it, and its invocation parens, in parens, cleanly expresses this. Note that in a world with modules everywhere, you almost never need an IIFE.
 
     ```javascript
     // immediately-invoked function expression (IIFE)
@@ -710,7 +710,7 @@ Outros Guias de estilo
   <a name="es6-rest"></a><a name="7.6"></a>
   - [7.6](#es6-rest) Never use `arguments`, opt to use rest syntax `...` instead. eslint: [`prefer-rest-params`](https://eslint.org/docs/rules/prefer-rest-params)
 
-    > Why? `...` is explicit about which arguments you want pulled. Plus, rest arguments are a real Array, and not merely Array-like like `arguments`.
+    > Porquê? `...` is explicit about which arguments you want pulled. Plus, rest arguments are a real Array, and not merely Array-like like `arguments`.
 
     ```javascript
     // bad
@@ -755,7 +755,7 @@ Outros Guias de estilo
   <a name="functions--default-side-effects"></a><a name="7.8"></a>
   - [7.8](#functions--default-side-effects) Avoid side effects with default parameters.
 
-    > Why? They are confusing to reason about.
+    > Porquê? They are confusing to reason about.
 
     ```javascript
     var b = 1;
@@ -787,7 +787,7 @@ Outros Guias de estilo
   <a name="functions--constructor"></a><a name="7.10"></a>
   - [7.10](#functions--constructor) Never use the Function constructor to create a new function. eslint: [`no-new-func`](https://eslint.org/docs/rules/no-new-func)
 
-    > Why? Creating a function in this way evaluates a string similarly to eval(), which opens vulnerabilities.
+    > Porquê? Creating a function in this way evaluates a string similarly to eval(), which opens vulnerabilities.
 
     ```javascript
     // bad
@@ -800,7 +800,7 @@ Outros Guias de estilo
   <a name="functions--signature-spacing"></a><a name="7.11"></a>
   - [7.11](#functions--signature-spacing) Spacing in a function signature. eslint: [`space-before-function-paren`](https://eslint.org/docs/rules/space-before-function-paren) [`space-before-blocks`](https://eslint.org/docs/rules/space-before-blocks)
 
-    > Why? Consistency is good, and you shouldn’t have to add or remove a space when adding or removing a name.
+    > Porquê? Consistency is good, and you shouldn’t have to add or remove a space when adding or removing a name.
 
     ```javascript
     // bad
@@ -816,7 +816,7 @@ Outros Guias de estilo
   <a name="functions--mutate-params"></a><a name="7.12"></a>
   - [7.12](#functions--mutate-params) Never mutate parameters. eslint: [`no-param-reassign`](https://eslint.org/docs/rules/no-param-reassign.html)
 
-    > Why? Manipulating objects passed in as parameters can cause unwanted variable side effects in the original caller.
+    > Porquê? Manipulating objects passed in as parameters can cause unwanted variable side effects in the original caller.
 
     ```javascript
     // bad
@@ -833,7 +833,7 @@ Outros Guias de estilo
   <a name="functions--reassign-params"></a><a name="7.13"></a>
   - [7.13](#functions--reassign-params) Never reassign parameters. eslint: [`no-param-reassign`](https://eslint.org/docs/rules/no-param-reassign.html)
 
-    > Why? Reassigning parameters can lead to unexpected behavior, especially when accessing the `arguments` object. It can also cause optimization issues, especially in V8.
+    > Porquê? Reassigning parameters can lead to unexpected behavior, especially when accessing the `arguments` object. It can also cause optimization issues, especially in V8.
 
     ```javascript
     // bad
@@ -861,7 +861,7 @@ Outros Guias de estilo
   <a name="functions--spread-vs-apply"></a><a name="7.14"></a>
   - [7.14](#functions--spread-vs-apply) Prefer the use of the spread operator `...` to call variadic functions. eslint: [`prefer-spread`](https://eslint.org/docs/rules/prefer-spread)
 
-    > Why? It’s cleaner, you don’t need to supply a context, and you can not easily compose `new` with `apply`.
+    > Porquê? It’s cleaner, you don’t need to supply a context, and you can not easily compose `new` with `apply`.
 
     ```javascript
     // bad
@@ -919,7 +919,7 @@ Outros Guias de estilo
   <a name="arrows--use-them"></a><a name="8.1"></a>
   - [8.1](#arrows--use-them) When you must use an anonymous function (as when passing an inline callback), use arrow function notation. eslint: [`prefer-arrow-callback`](https://eslint.org/docs/rules/prefer-arrow-callback.html), [`arrow-spacing`](https://eslint.org/docs/rules/arrow-spacing.html)
 
-    > Why? It creates a version of the function that executes in the context of `this`, which is usually what you want, and is a more concise syntax.
+    > Porquê? It creates a version of the function that executes in the context of `this`, which is usually what you want, and is a more concise syntax.
 
     > Why not? If you have a fairly complicated function, you might move that logic out into its own named function expression.
 
@@ -940,7 +940,7 @@ Outros Guias de estilo
   <a name="arrows--implicit-return"></a><a name="8.2"></a>
   - [8.2](#arrows--implicit-return) If the function body consists of a single statement returning an [expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Expressions) without side effects, omit the braces and use the implicit return. Otherwise, keep the braces and use a `return` statement. eslint: [`arrow-parens`](https://eslint.org/docs/rules/arrow-parens.html), [`arrow-body-style`](https://eslint.org/docs/rules/arrow-body-style.html)
 
-    > Why? Syntactic sugar. It reads well when multiple functions are chained together.
+    > Porquê? Syntactic sugar. It reads well when multiple functions are chained together.
 
     ```javascript
     // bad
@@ -985,7 +985,7 @@ Outros Guias de estilo
   <a name="arrows--paren-wrap"></a><a name="8.3"></a>
   - [8.3](#arrows--paren-wrap) In case the expression spans over multiple lines, wrap it in parentheses for better readability.
 
-    > Why? It shows clearly where the function starts and ends.
+    > Porquê? It shows clearly where the function starts and ends.
 
     ```javascript
     // bad
@@ -1007,7 +1007,7 @@ Outros Guias de estilo
   <a name="arrows--one-arg-parens"></a><a name="8.4"></a>
   - [8.4](#arrows--one-arg-parens) If your function takes a single argument and doesn’t use braces, omit the parentheses. Otherwise, always include parentheses around arguments for clarity and consistency. Note: it is also acceptable to always use parentheses, in which case use the [“always” option](https://eslint.org/docs/rules/arrow-parens#always) for eslint. eslint: [`arrow-parens`](https://eslint.org/docs/rules/arrow-parens.html)
 
-    > Why? Less visual clutter.
+    > Porquê? Less visual clutter.
 
     ```javascript
     // bad
@@ -1056,12 +1056,12 @@ Outros Guias de estilo
 
 **[⬆ voltar ao início](#Índice)**
 
-## Classes & Constructors
+## Classes e Construtores
 
   <a name="constructors--use-class"></a><a name="9.1"></a>
   - [9.1](#constructors--use-class) Always use `class`. Avoid manipulating `prototype` directly.
 
-    > Why? `class` syntax is more concise and easier to reason about.
+    > Porquê? `class` syntax is more concise and easier to reason about.
 
     ```javascript
     // bad
@@ -1090,7 +1090,7 @@ Outros Guias de estilo
   <a name="constructors--extends"></a><a name="9.2"></a>
   - [9.2](#constructors--extends) Use `extends` for inheritance.
 
-    > Why? It is a built-in way to inherit prototype functionality without breaking `instanceof`.
+    > Porquê? It is a built-in way to inherit prototype functionality without breaking `instanceof`.
 
     ```javascript
     // bad
@@ -1199,7 +1199,7 @@ Outros Guias de estilo
   <a name="classes--no-duplicate-members"></a>
   - [9.6](#classes--no-duplicate-members) Avoid duplicate class members. eslint: [`no-dupe-class-members`](https://eslint.org/docs/rules/no-dupe-class-members)
 
-    > Why? Duplicate class member declarations will silently prefer the last one - having duplicates is almost certainly a bug.
+    > Porquê? Duplicate class member declarations will silently prefer the last one - having duplicates is almost certainly a bug.
 
     ```javascript
     // bad
@@ -1221,12 +1221,12 @@ Outros Guias de estilo
 
 **[⬆ voltar ao início](#Índice)**
 
-## Modules
+## Módulos
 
   <a name="modules--use-them"></a><a name="10.1"></a>
   - [10.1](#modules--use-them) Always use modules (`import`/`export`) over a non-standard module system. You can always transpile to your preferred module system.
 
-    > Why? Modules are the future, let’s start using the future now.
+    > Porquê? Modules are the future, let’s start using the future now.
 
     ```javascript
     // bad
@@ -1245,7 +1245,7 @@ Outros Guias de estilo
   <a name="modules--no-wildcard"></a><a name="10.2"></a>
   - [10.2](#modules--no-wildcard) Do not use wildcard imports.
 
-    > Why? This makes sure you have a single default export.
+    > Porquê? This makes sure you have a single default export.
 
     ```javascript
     // bad
@@ -1258,7 +1258,7 @@ Outros Guias de estilo
   <a name="modules--no-export-from-import"></a><a name="10.3"></a>
   - [10.3](#modules--no-export-from-import) And do not export directly from an import.
 
-    > Why? Although the one-liner is concise, having one clear way to import and one clear way to export makes things consistent.
+    > Porquê? Although the one-liner is concise, having one clear way to import and one clear way to export makes things consistent.
 
     ```javascript
     // bad
@@ -1274,7 +1274,7 @@ Outros Guias de estilo
   <a name="modules--no-duplicate-imports"></a>
   - [10.4](#modules--no-duplicate-imports) Only import from a path in one place.
  eslint: [`no-duplicate-imports`](https://eslint.org/docs/rules/no-duplicate-imports)
-    > Why? Having multiple lines that import from the same path can make code harder to maintain.
+    > Porquê? Having multiple lines that import from the same path can make code harder to maintain.
 
     ```javascript
     // bad
@@ -1295,7 +1295,7 @@ Outros Guias de estilo
   <a name="modules--no-mutable-exports"></a>
   - [10.5](#modules--no-mutable-exports) Do not export mutable bindings.
  eslint: [`import/no-mutable-exports`](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-mutable-exports.md)
-    > Why? Mutation should be avoided in general, but in particular when exporting mutable bindings. While this technique may be needed for some special cases, in general, only constant references should be exported.
+    > Porquê? Mutation should be avoided in general, but in particular when exporting mutable bindings. While this technique may be needed for some special cases, in general, only constant references should be exported.
 
     ```javascript
     // bad
@@ -1310,7 +1310,7 @@ Outros Guias de estilo
   <a name="modules--prefer-default-export"></a>
   - [10.6](#modules--prefer-default-export) In modules with a single export, prefer default export over named export.
  eslint: [`import/prefer-default-export`](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/prefer-default-export.md)
-    > Why? To encourage more files that only ever export one thing, which is better for readability and maintainability.
+    > Porquê? To encourage more files that only ever export one thing, which is better for readability and maintainability.
 
     ```javascript
     // bad
@@ -1323,7 +1323,7 @@ Outros Guias de estilo
   <a name="modules--imports-first"></a>
   - [10.7](#modules--imports-first) Put all `import`s above non-import statements.
  eslint: [`import/first`](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/first.md)
-    > Why? Since `import`s are hoisted, keeping them all at the top prevents surprising behavior.
+    > Porquê? Since `import`s are hoisted, keeping them all at the top prevents surprising behavior.
 
     ```javascript
     // bad
@@ -1342,7 +1342,7 @@ Outros Guias de estilo
   <a name="modules--multiline-imports-over-newlines"></a>
   - [10.8](#modules--multiline-imports-over-newlines) Multiline imports should be indented just like multiline array and object literals.
 
-    > Why? The curly braces follow the same indentation rules as every other curly brace block in the style guide, as do the trailing commas.
+    > Porquê? The curly braces follow the same indentation rules as every other curly brace block in the style guide, as do the trailing commas.
 
     ```javascript
     // bad
@@ -1361,7 +1361,7 @@ Outros Guias de estilo
   <a name="modules--no-webpack-loader-syntax"></a>
   - [10.9](#modules--no-webpack-loader-syntax) Disallow Webpack loader syntax in module import statements.
  eslint: [`import/no-webpack-loader-syntax`](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-webpack-loader-syntax.md)
-    > Why? Since using Webpack syntax in the imports couples the code to a module bundler. Prefer using the loader syntax in `webpack.config.js`.
+    > Porquê? Since using Webpack syntax in the imports couples the code to a module bundler. Prefer using the loader syntax in `webpack.config.js`.
 
     ```javascript
     // bad
@@ -1375,12 +1375,12 @@ Outros Guias de estilo
 
 **[⬆ voltar ao início](#Índice)**
 
-## Iterators and Generators
+## Iteratores e Geradores
 
   <a name="iterators--nope"></a><a name="11.1"></a>
   - [11.1](#iterators--nope) Don’t use iterators. Prefer JavaScript’s higher-order functions instead of loops like `for-in` or `for-of`. eslint: [`no-iterator`](https://eslint.org/docs/rules/no-iterator.html) [`no-restricted-syntax`](https://eslint.org/docs/rules/no-restricted-syntax)
 
-    > Why? This enforces our immutable rule. Dealing with pure functions that return values is easier to reason about than side effects.
+    > Porquê? This enforces our immutable rule. Dealing with pure functions that return values is easier to reason about than side effects.
 
     > Use `map()` / `every()` / `filter()` / `find()` / `findIndex()` / `reduce()` / `some()` / ... to iterate over arrays, and `Object.keys()` / `Object.values()` / `Object.entries()` to produce arrays so you can iterate over objects.
 
@@ -1424,12 +1424,12 @@ Outros Guias de estilo
   <a name="generators--nope"></a><a name="11.2"></a>
   - [11.2](#generators--nope) Don’t use generators for now.
 
-    > Why? They don’t transpile well to ES5.
+    > Porquê? They don’t transpile well to ES5.
 
   <a name="generators--spacing"></a>
   - [11.3](#generators--spacing) If you must use generators, or if you disregard [our advice](#generators--nope), make sure their function signature is spaced properly. eslint: [`generator-star-spacing`](https://eslint.org/docs/rules/generator-star-spacing)
 
-    > Why? `function` and `*` are part of the same conceptual keyword - `*` is not a modifier for `function`, `function*` is a unique construct, different from `function`.
+    > Porquê? `function` and `*` are part of the same conceptual keyword - `*` is not a modifier for `function`, `function*` is a unique construct, different from `function`.
 
     ```javascript
     // bad
@@ -1489,7 +1489,7 @@ Outros Guias de estilo
 
 **[⬆ voltar ao início](#Índice)**
 
-## Properties
+## Propriedades
 
   <a name="properties--dot"></a><a name="12.1"></a>
   - [12.1](#properties--dot) Use dot notation when accessing properties. eslint: [`dot-notation`](https://eslint.org/docs/rules/dot-notation.html)
@@ -1535,7 +1535,7 @@ Outros Guias de estilo
 
 **[⬆ voltar ao início](#Índice)**
 
-## Variables
+## Variáveis
 
   <a name="variables--const"></a><a name="13.1"></a>
   - [13.1](#variables--const) Always use `const` or `let` to declare variables. Not doing so will result in global variables. We want to avoid polluting the global namespace. Captain Planet warned us of that. eslint: [`no-undef`](https://eslint.org/docs/rules/no-undef) [`prefer-const`](https://eslint.org/docs/rules/prefer-const)
@@ -1551,7 +1551,7 @@ Outros Guias de estilo
   <a name="variables--one-const"></a><a name="13.2"></a>
   - [13.2](#variables--one-const) Use one `const` or `let` declaration per variable. eslint: [`one-var`](https://eslint.org/docs/rules/one-var.html)
 
-    > Why? It’s easier to add new variable declarations this way, and you never have to worry about swapping out a `;` for a `,` or introducing punctuation-only diffs. You can also step through each declaration with the debugger, instead of jumping through all of them at once.
+    > Porquê? It’s easier to add new variable declarations this way, and you never have to worry about swapping out a `;` for a `,` or introducing punctuation-only diffs. You can also step through each declaration with the debugger, instead of jumping through all of them at once.
 
     ```javascript
     // bad
@@ -1574,7 +1574,7 @@ Outros Guias de estilo
   <a name="variables--const-let-group"></a><a name="13.3"></a>
   - [13.3](#variables--const-let-group) Group all your `const`s and then group all your `let`s.
 
-    > Why? This is helpful when later on you might need to assign a variable depending on one of the previous assigned variables.
+    > Porquê? This is helpful when later on you might need to assign a variable depending on one of the previous assigned variables.
 
     ```javascript
     // bad
@@ -1600,7 +1600,7 @@ Outros Guias de estilo
   <a name="variables--define-where-used"></a><a name="13.4"></a>
   - [13.4](#variables--define-where-used) Assign variables where you need them, but place them in a reasonable place.
 
-    > Why? `let` and `const` are block scoped and not function scoped.
+    > Porquê? `let` and `const` are block scoped and not function scoped.
 
     ```javascript
     // bad - unnecessary function call
@@ -1638,7 +1638,7 @@ Outros Guias de estilo
   <a name="variables--no-chain-assignment"></a><a name="13.5"></a>
   - [13.5](#variables--no-chain-assignment) Don’t chain variable assignments. eslint: [`no-multi-assign`](https://eslint.org/docs/rules/no-multi-assign)
 
-    > Why? Chaining variable assignments creates implicit global variables.
+    > Porquê? Chaining variable assignments creates implicit global variables.
 
     ```javascript
     // bad
@@ -1671,7 +1671,7 @@ Outros Guias de estilo
   <a name="variables--unary-increment-decrement"></a><a name="13.6"></a>
   - [13.6](#variables--unary-increment-decrement) Avoid using unary increments and decrements (++, --). eslint [`no-plusplus`](https://eslint.org/docs/rules/no-plusplus)
 
-    > Why? Per the eslint documentation, unary increment and decrement statements are subject to automatic semicolon insertion and can cause silent errors with incrementing or decrementing values within an application. It is also more expressive to mutate your values with statements like `num += 1` instead of `num++` or `num ++`. Disallowing unary increment and decrement statements also prevents you from pre-incrementing/pre-decrementing values unintentionally which can also cause unexpected behavior in your programs.
+    > Porquê? Per the eslint documentation, unary increment and decrement statements are subject to automatic semicolon insertion and can cause silent errors with incrementing or decrementing values within an application. It is also more expressive to mutate your values with statements like `num += 1` instead of `num++` or `num ++`. Disallowing unary increment and decrement statements also prevents you from pre-incrementing/pre-decrementing values unintentionally which can also cause unexpected behavior in your programs.
 
     ```javascript
     // bad
@@ -1705,7 +1705,7 @@ Outros Guias de estilo
 <a name="variables--linebreak"></a>
   - [13.7](#variables--linebreak) Avoid linebreaks before or after `=` in an assignment. If your assignment violates [`max-len`](https://eslint.org/docs/rules/max-len.html), surround the value in parens. eslint [`operator-linebreak`](https://eslint.org/docs/rules/operator-linebreak.html).
 
-    > Why? Linebreaks surrounding `=` can obfuscate the value of an assignment.
+    > Porquê? Linebreaks surrounding `=` can obfuscate the value of an assignment.
 
     ```javascript
     // bad
@@ -1826,7 +1826,7 @@ Outros Guias de estilo
 
 **[⬆ voltar ao início](#Índice)**
 
-## Comparison Operators & Equality
+## Operadores de Comparação e Igualdade
 
   <a name="comparison--eqeqeq"></a><a name="15.1"></a>
   - [15.1](#comparison--eqeqeq) Use `===` and `!==` over `==` and `!=`. eslint: [`eqeqeq`](https://eslint.org/docs/rules/eqeqeq.html)
@@ -1889,7 +1889,7 @@ Outros Guias de estilo
   <a name="comparison--switch-blocks"></a><a name="15.5"></a>
   - [15.5](#comparison--switch-blocks) Use braces to create blocks in `case` and `default` clauses that contain lexical declarations (e.g. `let`, `const`, `function`, and `class`). eslint: [`no-case-declarations`](https://eslint.org/docs/rules/no-case-declarations.html)
 
-    > Why? Lexical declarations are visible in the entire `switch` block but only get initialized when assigned, which only happens when its `case` is reached. This causes problems when multiple `case` clauses attempt to define the same thing.
+    > Porquê? Lexical declarations are visible in the entire `switch` block but only get initialized when assigned, which only happens when its `case` is reached. This causes problems when multiple `case` clauses attempt to define the same thing.
 
     ```javascript
     // bad
@@ -1973,7 +1973,7 @@ Outros Guias de estilo
   <a name="comparison--no-mixed-operators"></a>
   - [15.8](#comparison--no-mixed-operators) When mixing operators, enclose them in parentheses. The only exception is the standard arithmetic operators (`+`, `-`, `*`, & `/`) since their precedence is broadly understood. eslint: [`no-mixed-operators`](https://eslint.org/docs/rules/no-mixed-operators.html)
 
-    > Why? This improves readability and clarifies the developer’s intention.
+    > Porquê? This improves readability and clarifies the developer’s intention.
 
     ```javascript
     // bad
@@ -2005,7 +2005,7 @@ Outros Guias de estilo
 
 **[⬆ voltar ao início](#Índice)**
 
-## Blocks
+## Blocos
 
   <a name="blocks--braces"></a><a name="16.1"></a>
   - [16.1](#blocks--braces) Use braces with all multi-line blocks. eslint: [`nonblock-statement-body-position`](https://eslint.org/docs/rules/nonblock-statement-body-position)
@@ -2126,7 +2126,7 @@ Outros Guias de estilo
   <a name="control-statements"></a>
   - [17.1](#control-statements) In case your control statement (`if`, `while` etc.) gets too long or exceeds the maximum line length, each (grouped) condition could be put into a new line. The logical operator should begin the line.
 
-    > Why? Requiring operators at the beginning of the line keeps the operators aligned and follows a pattern similar to method chaining. This also improves readability by making it easier to visually follow complex logic.
+    > Porquê? Requiring operators at the beginning of the line keeps the operators aligned and follows a pattern similar to method chaining. This also improves readability by making it easier to visually follow complex logic.
 
     ```javascript
     // bad
@@ -2192,7 +2192,7 @@ Outros Guias de estilo
 
 **[⬆ voltar ao início](#Índice)**
 
-## Comments
+## Comentários
 
   <a name="comments--multiline"></a><a name="17.1"></a>
   - [18.1](#comments--multiline) Use `/** ... */` for multi-line comments.
@@ -2333,7 +2333,7 @@ Outros Guias de estilo
 
 **[⬆ voltar ao início](#Índice)**
 
-## Whitespace
+## Espaços em branco
 
   <a name="whitespace--spaces"></a><a name="18.1"></a>
   - [19.1](#whitespace--spaces) Use soft tabs (space character) set to 2 spaces. eslint: [`indent`](https://eslint.org/docs/rules/indent.html)
@@ -2638,7 +2638,7 @@ Outros Guias de estilo
   <a name="whitespace--max-len"></a><a name="18.12"></a>
   - [19.12](#whitespace--max-len) Avoid having lines of code that are longer than 100 characters (including whitespace). Note: per [above](#strings--line-length), long strings are exempt from this rule, and should not be broken up. eslint: [`max-len`](https://eslint.org/docs/rules/max-len.html)
 
-    > Why? This ensures readability and maintainability.
+    > Porquê? This ensures readability and maintainability.
 
     ```javascript
     // bad
@@ -2667,7 +2667,7 @@ Outros Guias de estilo
 
 **[⬆ voltar ao início](#Índice)**
 
-## Commas
+## Vírgulas
 
   <a name="commas--leading-trailing"></a><a name="19.1"></a>
   - [20.1](#commas--leading-trailing) Leading commas: **Nope.** eslint: [`comma-style`](https://eslint.org/docs/rules/comma-style.html)
@@ -2707,7 +2707,7 @@ Outros Guias de estilo
   <a name="commas--dangling"></a><a name="19.2"></a>
   - [20.2](#commas--dangling) Additional trailing comma: **Yup.** eslint: [`comma-dangle`](https://eslint.org/docs/rules/comma-dangle.html)
 
-    > Why? This leads to cleaner git diffs. Also, transpilers like Babel will remove the additional trailing comma in the transpiled code which means you don’t have to worry about the [trailing comma problem](https://github.com/airbnb/javascript/blob/es5-deprecated/es5/README.md#commas) in legacy browsers.
+    > Porquê? This leads to cleaner git diffs. Also, transpilers like Babel will remove the additional trailing comma in the transpiled code which means you don’t have to worry about the [trailing comma problem](https://github.com/airbnb/javascript/blob/es5-deprecated/es5/README.md#commas) in legacy browsers.
 
     ```diff
     // bad - git diff without trailing comma
@@ -2802,12 +2802,12 @@ Outros Guias de estilo
 
 **[⬆ voltar ao início](#Índice)**
 
-## Semicolons
+## Pontos e Vírgulas
 
   <a name="semicolons--required"></a><a name="20.1"></a>
   - [21.1](#semicolons--required) **Yup.** eslint: [`semi`](https://eslint.org/docs/rules/semi.html)
 
-    > Why? When JavaScript encounters a line break without a semicolon, it uses a set of rules called [Automatic Semicolon Insertion](https://tc39.github.io/ecma262/#sec-automatic-semicolon-insertion) to determine whether or not it should regard that line break as the end of a statement, and (as the name implies) place a semicolon into your code before the line break if it thinks so. ASI contains a few eccentric behaviors, though, and your code will break if JavaScript misinterprets your line break. These rules will become more complicated as new features become a part of JavaScript. Explicitly terminating your statements and configuring your linter to catch missing semicolons will help prevent you from encountering issues.
+    > Porquê? When JavaScript encounters a line break without a semicolon, it uses a set of rules called [Automatic Semicolon Insertion](https://tc39.github.io/ecma262/#sec-automatic-semicolon-insertion) to determine whether or not it should regard that line break as the end of a statement, and (as the name implies) place a semicolon into your code before the line break if it thinks so. ASI contains a few eccentric behaviors, though, and your code will break if JavaScript misinterprets your line break. These rules will become more complicated as new features become a part of JavaScript. Explicitly terminating your statements and configuring your linter to catch missing semicolons will help prevent you from encountering issues.
 
     ```javascript
     // bad - raises exception
@@ -2852,7 +2852,7 @@ Outros Guias de estilo
 
 **[⬆ voltar ao início](#Índice)**
 
-## Type Casting & Coercion
+## Conversão de Tipos e Coerção
 
   <a name="coercion--explicit"></a><a name="21.1"></a>
   - [22.1](#coercion--explicit) Perform type coercion at the beginning of the statement.
@@ -2941,7 +2941,7 @@ Outros Guias de estilo
 
 **[⬆ voltar ao início](#Índice)**
 
-## Naming Conventions
+## Convenções de Nomenclatura
 
   <a name="naming--descriptive"></a><a name="22.1"></a>
   - [23.1](#naming--descriptive) Avoid single letter names. Be descriptive with your naming. eslint: [`id-length`](https://eslint.org/docs/rules/id-length)
@@ -3000,7 +3000,7 @@ Outros Guias de estilo
   <a name="naming--leading-underscore"></a><a name="22.4"></a>
   - [23.4](#naming--leading-underscore) Do not use trailing or leading underscores. eslint: [`no-underscore-dangle`](https://eslint.org/docs/rules/no-underscore-dangle.html)
 
-    > Why? JavaScript does not have the concept of privacy in terms of properties or methods. Although a leading underscore is a common convention to mean “private”, in fact, these properties are fully public, and as such, are part of your public API contract. This convention might lead developers to wrongly think that a change won’t count as breaking, or that tests aren’t needed. tl;dr: if you want something to be “private”, it must not be observably present.
+    > Porquê? JavaScript does not have the concept of privacy in terms of properties or methods. Although a leading underscore is a common convention to mean “private”, in fact, these properties are fully public, and as such, are part of your public API contract. This convention might lead developers to wrongly think that a change won’t count as breaking, or that tests aren’t needed. tl;dr: if you want something to be “private”, it must not be observably present.
 
     ```javascript
     // bad
@@ -3107,7 +3107,7 @@ Outros Guias de estilo
   <a name="naming--Acronyms-and-Initialisms"></a>
   - [23.9](#naming--Acronyms-and-Initialisms) Acronyms and initialisms should always be all capitalized, or all lowercased.
 
-    > Why? Names are for readability, not to appease a computer algorithm.
+    > Porquê? Names are for readability, not to appease a computer algorithm.
 
     ```javascript
     // bad
@@ -3143,7 +3143,7 @@ Outros Guias de estilo
   <a name="naming--uppercase"></a>
   - [23.10](#naming--uppercase) You may optionally uppercase a constant only if it (1) is exported, (2) is a `const` (it can not be reassigned), and (3) the programmer can trust it (and its nested properties) to never change.
 
-    > Why? This is an additional tool to assist in situations where the programmer would be unsure if a variable might ever change. UPPERCASE_VARIABLES are letting the programmer know that they can trust the variable (and its properties) not to change.
+    > Porquê? This is an additional tool to assist in situations where the programmer would be unsure if a variable might ever change. UPPERCASE_VARIABLES are letting the programmer know that they can trust the variable (and its properties) not to change.
     - What about all `const` variables? - This is unnecessary, so uppercasing should not be used for constants within a file. It should be used for exported constants however.
     - What about exported objects? - Uppercase at the top level of export  (e.g. `EXPORTED_OBJECT.key`) and maintain that all nested properties do not change.
 
@@ -3249,7 +3249,7 @@ Outros Guias de estilo
 
 **[⬆ voltar ao início](#Índice)**
 
-## Events
+## Eventos
 
   <a name="events--hash"></a><a name="24.1"></a>
   - [25.1](#events--hash) When attaching data payloads to events (whether DOM events or something more proprietary like Backbone events), pass an object literal (also known as a "hash")  instead of a raw value. This allows a subsequent contributor to add more data to the event payload without finding and updating every handler for the event. For example, instead of:
@@ -3349,7 +3349,7 @@ Outros Guias de estilo
 
 **[⬆ voltar ao início](#Índice)**
 
-## ECMAScript 5 Compatibility
+## Compatibilidade ECMAScript 5
 
   <a name="es5-compat--kangax"></a><a name="26.1"></a>
   - [27.1](#es5-compat--kangax) Refer to [Kangax](https://twitter.com/kangax/)’s ES5 [compatibility table](https://kangax.github.io/es5-compat-table/).
@@ -3357,7 +3357,7 @@ Outros Guias de estilo
 **[⬆ voltar ao início](#Índice)**
 
 <a name="ecmascript-6-styles"></a>
-## ECMAScript 6+ (ES 2015+) Styles
+## Estilos ECMAScript 6+ (ES 2015+)
 
   <a name="es6-styles"></a><a name="27.1"></a>
   - [28.1](#es6-styles) This is a collection of links to the various ES6+ features.
@@ -3380,11 +3380,11 @@ Outros Guias de estilo
   <a name="tc39-proposals"></a>
   - [28.2](#tc39-proposals) Do not use [TC39 proposals](https://github.com/tc39/proposals) that have not reached stage 3.
 
-    > Why? [They are not finalized](https://tc39.github.io/process-document/), and they are subject to change or to be withdrawn entirely. We want to use JavaScript, and proposals are not JavaScript yet.
+    > Porquê? [They are not finalized](https://tc39.github.io/process-document/), and they are subject to change or to be withdrawn entirely. We want to use JavaScript, and proposals are not JavaScript yet.
 
 **[⬆ voltar ao início](#Índice)**
 
-## Standard Library
+## Biblioteca Padrão
 
   The [Standard Library](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects)
   contains utilities that are functionally broken but remain for legacy reasons.
@@ -3393,7 +3393,7 @@ Outros Guias de estilo
   - [29.1](#standard-library--isnan) Use `Number.isNaN` instead of global `isNaN`.
     eslint: [`no-restricted-globals`](https://eslint.org/docs/rules/no-restricted-globals)
 
-    > Why? The global `isNaN` coerces non-numbers to numbers, returning true for anything that coerces to NaN.
+    > Porquê? The global `isNaN` coerces non-numbers to numbers, returning true for anything that coerces to NaN.
     > If this behavior is desired, make it explicit.
 
     ```javascript
@@ -3410,7 +3410,7 @@ Outros Guias de estilo
   - [29.2](#standard-library--isfinite) Use `Number.isFinite` instead of global `isFinite`.
     eslint: [`no-restricted-globals`](https://eslint.org/docs/rules/no-restricted-globals)
 
-    > Why? The global `isFinite` coerces non-numbers to numbers, returning true for anything that coerces to a finite number.
+    > Porquê? The global `isFinite` coerces non-numbers to numbers, returning true for anything that coerces to a finite number.
     > If this behavior is desired, make it explicit.
 
     ```javascript
@@ -3424,7 +3424,7 @@ Outros Guias de estilo
 
 **[⬆ voltar ao início](#Índice)**
 
-## Testing
+## Testes
 
   <a name="testing--yup"></a><a name="28.1"></a>
   - [30.1](#testing--yup) **Yup.**
@@ -3460,7 +3460,7 @@ Outros Guias de estilo
 
 **[⬆ voltar ao início](#Índice)**
 
-## Resources
+## Recursos
 
 **Learning ES6+**
 
@@ -3540,7 +3540,7 @@ Outros Guias de estilo
 
 **[⬆ voltar ao início](#Índice)**
 
-## In the Wild
+## Na natureza
 
   This is a list of organizations that are using this style guide. Send us a pull request and we'll add you to the list.
 
@@ -3659,19 +3659,19 @@ Outros Guias de estilo
   - ![ua](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Ukraine.png) **Ukrainian**: [ivanzusko/javascript](https://github.com/ivanzusko/javascript)
   - ![vn](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Vietnam.png) **Vietnam**: [hngiang/javascript-style-guide](https://github.com/hngiang/javascript-style-guide)
 
-## The JavaScript Style Guide Guide
+## Guia para o Guia de estilo JavaScript da Airbnb
 
   - [Reference](https://github.com/airbnb/javascript/wiki/The-JavaScript-Style-Guide-Guide)
 
-## Chat With Us About JavaScript
+## Converse connosco sobre JavaScript
 
   - Find us on [gitter](https://gitter.im/airbnb/javascript).
 
-## Contributors
+## Contribuidores
 
   - [View Contributors](https://github.com/airbnb/javascript/graphs/contributors)
 
-## License
+## Licença
 
 (The MIT License)
 
@@ -3698,7 +3698,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 **[⬆ voltar ao início](#Índice)**
 
-## Amendments
+## Emendas
 
 We encourage you to fork this guide and change the rules to fit your team’s style guide. Below, you may list some amendments to the style guide. This allows you to periodically update your style guide without having to deal with merge conflicts.
 
