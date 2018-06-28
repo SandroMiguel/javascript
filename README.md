@@ -156,8 +156,8 @@ Outros Guias de estilo
 ## Objetos
 
   <a name="objects--no-new"></a><a name="3.1"></a>
-  - [3.1](#objects--no-new) Utilize a sintaxe literal para a criação de objetos. eslint: [`no-new-object`]
-  (https://eslint.org/docs/rules/no-new-object.html)
+  - [3.1](#objects--no-new) Utilize a sintaxe literal para a criação de objetos. 
+  eslint: [`no-new-object`](https://eslint.org/docs/rules/no-new-object.html)
 
     ```javascript
     // bad
@@ -341,7 +341,8 @@ Outros Guias de estilo
 ## Arrays
 
   <a name="arrays--literals"></a><a name="4.1"></a>
-  - [4.1](#arrays--literals) Use the literal syntax for array creation. eslint: [`no-array-constructor`](https://eslint.org/docs/rules/no-array-constructor.html)
+  - [4.1](#arrays--literals) Use a sintaxe literal para a criação de Arrays. 
+  eslint: [`no-array-constructor`](https://eslint.org/docs/rules/no-array-constructor.html)
 
     ```javascript
     // bad
@@ -352,7 +353,9 @@ Outros Guias de estilo
     ```
 
   <a name="arrays--push"></a><a name="4.2"></a>
-  - [4.2](#arrays--push) Use [Array#push](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/push) instead of direct assignment to add items to an array.
+  - [4.2](#arrays--push) Utilize o 
+  [Array#push](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/push) em vez de 
+  adicionar itens diretamente a um array.
 
     ```javascript
     const someStack = [];
@@ -365,7 +368,7 @@ Outros Guias de estilo
     ```
 
   <a name="es6-array-spreads"></a><a name="4.3"></a>
-  - [4.3](#es6-array-spreads) Use array spreads `...` to copy arrays.
+  - [4.3](#es6-array-spreads) Utilize _array spreads_ `...` para copiar arrays.
 
     ```javascript
     // bad
@@ -382,7 +385,8 @@ Outros Guias de estilo
     ```
 
   <a name="arrays--from"></a><a name="4.4"></a>
-  - [4.4](#arrays--from) To convert an array-like object to an array, use spreads `...` instead of [Array.from](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/from).
+  - [4.4](#arrays--from) Para converter um objeto _array-like_ para um array, utilize os _spreads_ `...` em vez do 
+   [Array.from](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/from).
 
     ```javascript
     const foo = document.querySelectorAll('.foo');
@@ -395,7 +399,9 @@ Outros Guias de estilo
     ```
 
   <a name="arrays--mapping"></a>
-  - [4.5](#arrays--mapping) Use [Array.from](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/from) instead of spread `...` for mapping over iterables, because it avoids creating an intermediate array.
+  - [4.5](#arrays--mapping) Utilize o 
+  [Array.from](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/from) em vez do 
+  _spread_ `...` para fazer mapeamentos de forma a evitar a criação de um array intermediário.
 
     ```javascript
     // bad
@@ -406,7 +412,8 @@ Outros Guias de estilo
     ```
 
   <a name="arrays--callback-return"></a><a name="4.5"></a>
-  - [4.6](#arrays--callback-return) Use return statements in array method callbacks. It’s ok to omit the return if the function body consists of a single statement returning an expression without side effects, following [8.2](#arrows--implicit-return). eslint: [`array-callback-return`](https://eslint.org/docs/rules/array-callback-return)
+  - [4.6](#arrays--callback-return) Utilize instruções de retorno nos métodos de _callback_. Não existe problema em 
+  omitir o _return_ se o corpo da função consistir numa única linha, como indica o ponto [8.2](#arrows--implicit-return). eslint: [`array-callback-return`](https://eslint.org/docs/rules/array-callback-return)
 
     ```javascript
     // good
@@ -453,7 +460,8 @@ Outros Guias de estilo
     ```
 
   <a name="arrays--bracket-newline"></a>
-  - [4.7](#arrays--bracket-newline) Use line breaks after open and before close array brackets if an array has multiple lines
+  - [4.7](#arrays--bracket-newline) Utilize quebras de linha depois de abrir e antes de fechar os parênteses retos do 
+  array caso contenha várias linhas.
 
     ```javascript
     // bad
