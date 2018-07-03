@@ -341,7 +341,7 @@ Outros Guias de estilo
 ## Arrays
 
   <a name="arrays--literals"></a><a name="4.1"></a>
-  - [4.1](#arrays--literals) Use a sintaxe literal para a criação de Arrays. 
+  - [4.1](#arrays--literals) Utilize a sintaxe literal para a criação de Arrays. 
   eslint: [`no-array-constructor`](https://eslint.org/docs/rules/no-array-constructor.html)
 
     ```javascript
@@ -499,12 +499,13 @@ Outros Guias de estilo
 
 **[⬆ voltar ao início](#Índice)**
 
-## Desestruturação
+## Destructuring
 
   <a name="destructuring--object"></a><a name="5.1"></a>
-  - [5.1](#destructuring--object) Use object destructuring when accessing and using multiple properties of an object. eslint: [`prefer-destructuring`](https://eslint.org/docs/rules/prefer-destructuring)
+  - [5.1](#destructuring--object) Utilize o _object destructuring_ para aceder e usar várias propriedades de um 
+  objeto. eslint: [`prefer-destructuring`](https://eslint.org/docs/rules/prefer-destructuring)
 
-    > Porquê? Destructuring saves you from creating temporary references for those properties.
+    > Porquê? O _destructuring_ evita a criação de referências temporárias para essas propriedades.
 
     ```javascript
     // bad
@@ -528,7 +529,8 @@ Outros Guias de estilo
     ```
 
   <a name="destructuring--array"></a><a name="5.2"></a>
-  - [5.2](#destructuring--array) Use array destructuring. eslint: [`prefer-destructuring`](https://eslint.org/docs/rules/prefer-destructuring)
+  - [5.2](#destructuring--array) Utilize o _array destructuring_. 
+  eslint: [`prefer-destructuring`](https://eslint.org/docs/rules/prefer-destructuring)
 
     ```javascript
     const arr = [1, 2, 3, 4];
@@ -542,9 +544,11 @@ Outros Guias de estilo
     ```
 
   <a name="destructuring--object-over-array"></a><a name="5.3"></a>
-  - [5.3](#destructuring--object-over-array) Use object destructuring for multiple return values, not array destructuring.
+  - [5.3](#destructuring--object-over-array) Utilize o _object destructuring_ para vários valores de retorno, não o 
+  _array destructuring_.
 
-    > Porquê? You can add new properties over time or change the order of things without breaking call sites.
+    > Porquê? Pode adicionar novas propriedades ao longo do tempo ou alterar a ordem das coisas sem afetar a maneira 
+    como é chamado.
 
     ```javascript
     // bad
